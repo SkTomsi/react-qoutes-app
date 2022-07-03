@@ -1,0 +1,50 @@
+.quote__card{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 640px;
+    max-height: 480px;
+    background-color: #e7f0fd;
+    padding: 30px;
+    border-radius: 36px;
+    box-shadow: 10px 20px 30px rgba(0,0,0,.01);
+    transition: transform 0.25s ease-out;
+}
+.quote__cardInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.quote__cardInfo > h4{
+    font-size: 24px;
+    font-weight: 500;
+    overflow-wrap: anyway;
+    color: #221E6E;
+    padding: 10px;
+}
+
+.quote__cardInfo > p{
+    font-size: 14px;
+    font-weight: 600px;
+    padding-top: 10px;
+}
+
+.quote__button > button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px solid #221E6E;
+    cursor: pointer;
+    background-color: white;
+}
+.quote__button > button:hover{
+    transition: 0.3s ease-in;
+    background-color: #221E6E;
+    color: white;
+}
+.quote__button{
+    padding-top: 10%;
+}

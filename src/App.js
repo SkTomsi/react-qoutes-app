@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import QuoteItem from "./QuoteItem";
 
 function App() {
   const [quotesData, setQuotesData] = useState("");
@@ -16,11 +17,12 @@ function App() {
   useEffect(() => {
     getRandomQoute();
   }, []);
+
   return (
-    <div>
-      <h2>{quotesData.text}</h2>
-      <p>{quotesData.author}</p>
-      <button onClick={getRandomQoute}>Next Quote</button>
+    <div className="App">
+      <div className="quote">
+        <QuoteItem quoteHandler={getRandomQoute} quote={quotesData} />
+      </div>
     </div>
   );
 }
