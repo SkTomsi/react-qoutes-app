@@ -4,7 +4,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 640px;
-    max-height: 480px;
     background-color: #e7f0fd;
     padding: 36px;
     border-radius: 36px;
@@ -18,8 +17,9 @@
 .quote__card:hover {
     transition: 0.3s ease-out;
     border: 1px solid #a5a3db;
-    box-shadow: 0px 24px 40px rgba(5, 0, 82, 0.199);
+    box-shadow: 0px 24px 40px rgba(5, 0, 82, 0.12);
 }
+
 
 .quote__cardInfo {
     display: flex;
@@ -30,28 +30,29 @@
 }
 
 .quote__cardInfo>h4 {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 300;
     overflow-wrap: anyway;
     color: #221E6E;
     padding: 10px;
 }
 
 .quote__cardInfo>p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: medium;
     padding-top: 10px;
+    font-style: italic;
 }
 
 .quote__button {
-    padding-top: 10%;
+    padding: 30px 30px 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .quote__buttonRight>button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 15px;
     border: 0;
     cursor: pointer;
@@ -66,7 +67,7 @@
 }
 
 .quote__buttonLeft>button {
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 15px;
     border: 0;
     cursor: pointer;

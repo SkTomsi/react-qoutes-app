@@ -4,6 +4,7 @@ import QuoteItem from "./QuoteItem";
 
 function App() {
   const [quotesData, setQuotesData] = useState("");
+  const [authorData, setAuthorData] = useState("");
 
   const getRandomQoute = () => {
     fetch("https://type.fit/api/quotes")
@@ -11,8 +12,13 @@ function App() {
       .then((quotes) => {
         const randomQuote = Math.floor(Math.random() * quotes.length);
         setQuotesData(quotes[randomQuote]);
+        setAuthorData(quotes[randomQuote].author);
       });
   };
+
+  if (authorData === null) {
+    setAuthorData("Unknown");
+  }
 
   useEffect(() => {
     getRandomQoute();
@@ -21,7 +27,11 @@ function App() {
   return (
     <div className="App">
       <div className="quote">
-        <QuoteItem quoteHandler={getRandomQoute} quote={quotesData} />
+        <QuoteItem
+          quoteHandler={getRandomQoute}
+          quote={quotesData}
+          author={authorData}
+        />
       </div>
     </div>
   );
