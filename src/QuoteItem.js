@@ -9,7 +9,12 @@ const QuoteItem = ({ quote, quoteHandler }) => {
         {/*   <img src={headerImg} alt="quote" /> */}
         <h4>{text}</h4>
         <p>- {author}</p>
-        <div className="quote__button">
+      </div>
+      <div className="quote__button">
+        <div className="quote__buttonLeft">
+          <button onClick={quoteHandler}>Next Quote</button>
+        </div>
+        <div className="quote__buttonRight">
           <button onClick={quoteHandler}>Next Quote</button>
         </div>
       </div>
