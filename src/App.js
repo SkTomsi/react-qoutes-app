@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      Quotes App
       <div className="quote">
         <QuoteItem
           quoteHandler={getRandomQoute}
