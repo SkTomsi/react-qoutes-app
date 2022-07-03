@@ -11,6 +11,10 @@ body {
 
   display: flex;
   flex-direction: column;
-  /*  align-items: center; */
+  align-items: center;
   background-color: white;
+}
+
+.App>h1 {
+  padding-top: 36px;
 }
