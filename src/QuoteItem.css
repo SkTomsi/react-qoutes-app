@@ -27,7 +27,6 @@
 .quote__cardInfo {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     padding: 10px;
 
 }
@@ -86,6 +85,14 @@
 
 @media screen and (max-width: 640px) {
     .quote__card {
-        max-width: 280px
+        width: 380px
+    }
+
+    .quote__cardInfo>h4 {
+        font-size: 20px;
+    }
+
+    .quote__cardInfo>p {
+        font-size: 8px;
     }
 }
