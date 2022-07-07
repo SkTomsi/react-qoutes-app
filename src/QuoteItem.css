@@ -1,8 +1,11 @@
+.quote__container {
+    margin: 0 auto;
+}
+
+
+
 .quote__card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-top: 40px;
     width: 640px;
     background-color: #e7f0fd;
     padding: 36px;
@@ -79,4 +82,10 @@
     transition: 0.3s ease-in;
     background-color: #9390cf;
 
+}
+
+@media screen and (max-width: 640px) {
+    .quote__card {
+        max-width: 420px
+    }
 }
