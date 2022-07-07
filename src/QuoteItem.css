@@ -86,6 +86,6 @@
 
 @media screen and (max-width: 640px) {
     .quote__card {
-        max-width: 420px
+        max-width: 280px
     }
 }
