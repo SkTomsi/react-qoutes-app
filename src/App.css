@@ -8,16 +8,14 @@
 }
 
 body {
-
-  display: flex;
-  flex-direction: column;
   background-color: white;
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 100px;
+  justify-content: space-between;
 }
 
 .App>h1 {

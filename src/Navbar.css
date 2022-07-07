@@ -3,6 +3,23 @@
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    background-color: #edecff;
-    padding: 15px;
+    padding: 0 55px;
+}
+
+.navbar__gitHubLogo>a>img {
+    object-fit: contain;
+    height: 50px;
+    color: #fff;
+}
+
+.navbar__text {
+    color: #221E6E;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 640px) {
+    .navbar__text {
+        font-size: 22px;
+    }
 }

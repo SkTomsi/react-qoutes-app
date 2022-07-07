@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
+import Footer from "./Footer";
+
 import Navbar from "./Navbar";
 import QuoteItem from "./QuoteItem";
 
@@ -28,13 +30,14 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1>Quotes App</h1>
-
       <QuoteItem
         quoteHandler={getRandomQoute}
         quote={quotesData}
         author={authorData}
       />
+      <>
+        <Footer />
+      </>
     </div>
   );
 }
